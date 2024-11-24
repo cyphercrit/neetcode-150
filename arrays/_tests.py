@@ -3,6 +3,7 @@ from contains_duplicate import Solution as ContainsDuplicate
 from valid_anagram import Solution as ValidAnagram
 from two_sum import Solution as TwoSum
 from top_k_frequent_elements import Solution as TopKFrequent
+from product_of_array_except_self import Solution as ProductExceptSelf
 
 class TestContainsDuplicate(unittest.TestCase):
     def test_contains_duplicate(self):
@@ -28,6 +29,13 @@ class TestTopKFrequent(unittest.TestCase):
         solution = TopKFrequent()
         self.assertEqual(sorted(solution.topKFrequent([1,2,2,3,3,3], 2)), [2, 3])
         self.assertEqual(sorted(solution.topKFrequent([7,7], 1)), [7])
+
+class TestProductExceptSelf(unittest.TestCase):
+    def test_product_except_self(self):
+        solution = ProductExceptSelf()
+        self.assertEqual(solution.productExceptSelf([1,2,4,6]), [48,24,12,8])
+        self.assertEqual(solution.productExceptSelf([-1,0,1,2,3]), [0,-6,0,0,0])
+        self.assertEqual(solution.productExceptSelf([1,2,0,0,5]), [0,0,0,0,0])
 
 if __name__ == "__main__":
     unittest.main()
