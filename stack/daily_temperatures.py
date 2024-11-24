@@ -8,6 +8,8 @@ a warmer temperature appears on a future day. If there is no day in the future w
 a warmer temperature will appear for the ith day, set result[i] to 0 instead.
 '''
 
+# Time Complexity:
+# Space Complexity:
 class Solution:
     def dailyTemperatures(self, temperatures: List[int]) -> List[int]:
-        pass
+        pass # TODO

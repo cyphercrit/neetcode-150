@@ -9,6 +9,8 @@ Merge the two lists into one sorted linked list and return the head of the new s
 The new list should be made up of nodes from list1 and list2.
 '''
 
+# Time Complexity:
+# Space Complexity:
 class Solution:
     def mergeTwoLists(self, list1: Optional[ListNode], list2: Optional[ListNode]) -> Optional[ListNode]:
-        pass
+        pass # TODO
