@@ -2,6 +2,7 @@ import unittest
 from valid_palindrome import Solution as ValidPalindrome
 from two_sum_2 import Solution as TwoSum
 from three_sum import Solution as ThreeSum
+from container_with_most_water import Solution as MaxArea
 
 class TestValidPalindrome(unittest.TestCase):
     def test_valid_palindrome(self):
@@ -21,6 +22,12 @@ class TestThreeSum(unittest.TestCase):
         self.assertEqual(solution.threeSum([0,1,1]), [])
         self.assertEqual(solution.threeSum([0,0,0]), [[0,0,0]])
         self.assertEqual(solution.threeSum([-2,0,0,2,2]), [[-2,0,2]])
+
+class TestMaxArea(unittest.TestCase):
+    def test_max_area(self):
+        solution = MaxArea()
+        self.assertEqual(solution.maxArea([1,7,2,5,4,7,3,6]), 36)
+        self.assertEqual(solution.maxArea([2,2,2]), 4)
       
 if __name__ == "__main__":
     unittest.main()
