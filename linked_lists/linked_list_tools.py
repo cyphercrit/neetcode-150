@@ -35,3 +35,9 @@ class LinkedListTools():
         linked_list = self.create_list(arr)
         result_linked_list = func(linked_list)
         return self.to_list(result_linked_list)
+    
+    # applies a function that takes two linked list heads and returns one linked list, returning the result as a list
+    def apply_function_two_lists(self, func: Callable[[Optional[ListNode], Optional[ListNode]], Optional[ListNode]], arr1: list, arr2: list) -> list:
+        linked_list1, linked_list2 = self.create_list(arr1), self.create_list(arr2)
+        result_linked_list = func(linked_list1, linked_list2)
+        return self.to_list(result_linked_list)
